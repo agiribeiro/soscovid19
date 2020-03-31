@@ -28,13 +28,12 @@
 		<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
+					<legend><span class="form_title"></span> Cadastro do voluntário</legend>
 					<div class="banner-content">
 						<h1 class ="Banner-title">AJUDE MESMO LONGE</h1>
-
 						<div class="form-content">
 							<form class = "form">
 							<fieldset>
-									<legend><span class="form_title"></span> Dados do voluntário</legend>
 									<div class="form-divisor">
 										<div class="info">
 											<label class= "title" for="Dados-pessoais">Dados pessoais:</label>
@@ -45,9 +44,9 @@
 												<input type="text" id="field_telefone" placeholder="Telefone Ex: (00) 00000-0000">
 											</div>
 											<div id="row">
-											<select name="dropdown" id="field_profissao">
+											<select name="dropdown" id="field_profissao" >
 												<optgroup label="Áreas da saúde">
-												  <option value="Médico">Selecione sua área de atuação</option>
+												  <option value="Médico">Área de atuação</option>
 												  <option value="Médico">Medicina</option>
 												  <option value="Enfermagem">Enfermagem</option>
 												  <option value="Nutrição">Nutrição</option>
@@ -59,13 +58,10 @@
 											<input type="text" id="field_registro" placeholder="Registro (CRM, CRF, CRP...)"> 
 											</div>								
 											<input type="text" id="field_endereco" placeholder="Endereco">
-											<input type="text" id="field_cep" placeholder="CEP">
 											<label for="horarios">Horários disponíveis:</label>
 											<textarea id="field_horarios" placeholder="Exemplo:`Segunda-feira as 14:00, terca-feira as 11:00,etc...
 											"></textarea>
-											
-											<textarea id="field_infoadd" placeholder="Informacoes adicionais"></textarea>
-										</div>
+											</div>
 
 										<!-- FORMULARIOS DO ENDEREÇO -->
 										<div class= "adress">
@@ -82,7 +78,7 @@
 												<input type="text" id="field_cidade" placeholder="Cidade">
 												<input type="text" id="field_Bairro" placeholder="Bairro">
 											</div>
-											<input type="button" value="Cadastrar" onclick="getElementsAndPrint()" />
+											<input id= "cadastrar" type="button" value="Cadastrar" onclick="getElementsAndPrint()" />
 
 										</div>
 										</div>
@@ -98,37 +94,6 @@
 			</section>
 
 
-		<!-- Three -->
-			<section id="three" class="wrapper align-center">
-				<div id="primeira" class="inner">
-					<div class="flex flex-2">
-						<article>
-							<div class="image round">
-								<img src="images/pic01.jpg" alt="Pic 01" />
-							</div>
-							<header>
-								<h3>Voluntários<br /> Profissionais da Saúde</h3>
-							</header>
-							<p>Se você é profissional da saúde e deseja se voluntariar para prestar atendimento online, através da nossa plataforma de teleatendimento, se cadastre aqui e faça parte desse time que está ajudando a combater o covid-19.</p>
-							<footer>
-								<a href="#" class="button"> Quero participar</a>
-							</footer>
-						</article>
-						<article>
-							<div class="image round">
-								<img src="images/pic02.jpg" alt="Pic 02" />
-							</div>
-							<header>
-								<h3>Teleatendimento<br /> Seja um voluntário</h3>
-							</header>
-							<p>Você pode se voluntariar apenas por 1hora para atender na nossa plataforma. Quer ajudar no combate ao Covid-19? Cadastra-se aqui e venha fazer parte do nosso time. Precisamos de você.</p>
-							<footer>
-								<a href="form.html" class="button">Quero participar</a>
-							</footer>
-						</article>
-					</div>
-				</div>
-			</section>
 
 		<!-- Footer -->
 			<footer id="footer">

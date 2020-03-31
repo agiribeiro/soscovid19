@@ -1589,7 +1589,8 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: #9a9a9a;
+		color: black;
+		color: black !important;
 		font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 		font-size: 14pt;
 		font-weight: 400;
@@ -2129,6 +2130,7 @@
 	}
 
 	::-webkit-input-placeholder {
+		color: black !important;
 		opacity: 1.0;
 	}
 
@@ -2919,6 +2921,7 @@
 /* Banner */
 
 	#banner {
+		padding: 8em 0 9em 0;
 		background-image: url(../../images/banner.jpg);
 		background-size: cover;
 		background-position: bottom;
@@ -2946,12 +2949,12 @@
 		}
 
 		#banner h1 {
-			font-size: 7em;
-			font-weight: 400;
+			font-size: 5em;
+			font-weight: 1000;
 			color: #fff;
 			line-height: 1em;
-			margin: 0 100px 1em -10%;
-			padding: 0;
+			margin: 0 10px 1em 0;
+			padding-right: 90px;
 		}
 
 		#banner h3 {
@@ -3110,6 +3113,7 @@
 		}
 		.banner-content{
 			padding: 0px;
+			width: 110%;
 			margin: 0px;
 			display: flex;
 			justify-content: space-between;
@@ -3119,34 +3123,63 @@
 		.form input, .form textarea{
 			margin-bottom: 1vmin;
 			background-color: white;
-			border: 1px black solid;
-			font-size: 2vmin;
-
+			border: 0.5px solid black;
+		}
+		.adress #cadastrar{
+			border: 0px solid black !important;
+			margin-top: 23%;
+		}
+		select{
+			color: white !important;
+		}
+		legend{
+			font-size: 7vmin;
+			font-weight: bold;
+			height: 10vmax;
+			color: white;
+			text-align: end;
+			margin-right: 10vmin;
+			justify-content: center;
+			vertical-align: middle;
+			line-height: 6vmin;
+			padding-top: 3vmin;
+			margin-bottom: 0px;
+		}
+		.title{
+			margin-top: 5vmin;
+			font-size: 7vmin;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-weight: bold;
+			height: 10vmax;
+			justify-content: center;
+			vertical-align: middle;
+			line-height: 6vmin;
+			margin-bottom: 0px;
 
 		}
-	
 		.form-divisor{
 			display: flex;
 			flex-direction: row;
-			justify-content: center;
-			align-items: stretch;
+			justify-content: space-between;
+		}
+		.info{
+			padding-left: 0.9%;
 		}
 		.form #row{
 			display: flex;
 			flex-direction: row;
-			justify-content: center;
-			align-items: stretch;
-		}
-		.form #row #input{
-			width: 50%;
+			justify-content: space-between;
 		}
 		.form-content{
 			width: 500vmin;
 		}
+		.form{
+			height: 40vmax;
+		}
 		.inner .form{
 			border-radius: 30px;
-			padding: 20px;
-			width: 100%;
+			padding-left: 20px;
+			padding-right: 20px;
 			font-size: 30px;
 			background-color: white;
 		}
