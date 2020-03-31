@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-
 <html>
 	<head>
 		<title>UFRN vs COVID-19</title>
@@ -10,6 +9,8 @@
 		<link rel="stylesheet" href="assets/css/fontawesome.css">
 
 	</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="assets/js/form.js"></script>
 	<body>
 
 		<!-- Header -->
@@ -24,42 +25,39 @@
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
 			</header>
-
 		<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
-					<legend><span class="form-title"></span> Cadastro do voluntário</legend>
 					<div class="banner-content">
 						<h1 id ="title">AJUDE MESMO LONGE</h1>
 						<div class="form-content">
-							<form class = "form">
-							<fieldset>
+							<form class = "form" id="formularioVoluntarioSaude">
+								<fieldset>
 									<div class="form-divisor">
 										<div class="info">
 											<label class= "title" for="Dados-pessoais">Dados pessoais:</label>
-											<input type="text" id="field_nome" placeholder="Nome completo">
-											<input type="email" id="field_email" placeholder="Email">
+											<input type="text" name = "nome" id="field_nome" placeholder="Nome completo">
+											<input type="email" name = "email" id="field_email" placeholder="Email">
 											<div id="row">
-												<input type="text" id="field_cpf" placeholder="CPF">
-												<input type="text" id="field_telefone" placeholder="Telefone Ex: (00) 00000-0000">
+												<input type="text" name = "cpf" id="field_cpf" placeholder="CPF">
+												<input type="text" name = "telefone" id="field_telefone" placeholder="Telefone Ex: (00) 00000-0000">
 											</div>
 											<div id="row">
-											<select name="dropdown" id="field_profissao" >
+											<select name="profissao" id="field_profissao" >
 												<optgroup label="Áreas da saúde">
-												  <option value="Médico">Área de atuação</option>
-												  <option value="Médico">Medicina</option>
+												  <option value=" ">Área de atuação</option>
+												  <option value="Medico">Medicina</option>
 												  <option value="Enfermagem">Enfermagem</option>
-												  <option value="Nutrição">Nutrição</option>
+												  <option value="Nutricao">Nutrição</option>
 												  <option value="Fisioterapia">Fisioterapia</option>
 												  <option value="Odontologia">Odontologia</option>
 												  <option value="Outros">Outros</option>
 												</optgroup>
 											</select>     
-											<input type="text" id="field_registro" placeholder="Registro (CRM, CRF, CRP...)"> 
+											<input type="text" name = "registro" id="field_registro" placeholder="Registro (CRM, CRF, CRP...)"> 
 											</div>								
-											<input type="text" id="field_endereco" placeholder="Endereco">
 											<label for="horarios">Horários disponíveis:</label>
-											<textarea id="field_horarios" placeholder="Exemplo:`Segunda-feira as 14:00, terca-feira as 11:00,etc...
+											<textarea name = "horario_disponivel" id="field_horarios" placeholder="Exemplo:`Segunda-feira as 14:00, terca-feira as 11:00,etc...
 											"></textarea>
 											</div>
 
@@ -67,18 +65,18 @@
 										<div class= "adress">
 											<div class="info">
 											<label class= "title" for="Dados-pessoais">Endereço:</label>
-											<input type="text" id="field_logradouro" placeholder="Logradouro">
+											<input type="text" name = "rua" id="field_rua" placeholder="Rua">
 											<div id="row">
-												<input type="text" id="field_numero" placeholder="Número">
-												<input type="text" id="field_cep" placeholder="CEP">	
+												<input type="text" name = "numero" id="field_numero" placeholder="Número">
+												<input type="text" name = "cep" id="field_cep" placeholder="CEP">	
 											</div>
-											<input type="text" id="field_complemento" placeholder="Complemento">
+											<input type="text" name = "complemento" id="field_complemento" placeholder="Complemento">
 											<div id="row">
-												<input type="text" id="field_UF" placeholder="UF">
-												<input type="text" id="field_cidade" placeholder="Cidade">
-												<input type="text" id="field_Bairro" placeholder="Bairro">
+												<input type="text" name = "estado" id="field_estado" placeholder="UF">
+												<input type="text" name = "cidade" id="field_cidade" placeholder="Cidade">
+												<input type="text" name = "bairro" id="field_bairro" placeholder="Bairro">
 											</div>
-											<input id= "cadastrar" type="button" value="Cadastrar" onclick="getElementsAndPrint()" />
+											<input id= "cadastrar" type="button" value="Cadastrar" onclick="getFormData()" />
 
 										</div>
 										</div>

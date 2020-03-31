@@ -3110,6 +3110,10 @@
 			}
 
 		}
+		textarea{
+			height: 15vmin;
+			margin-bottom: 30vmax;
+		}
 
 		#banner h1 {
 			font-size: 5em;
@@ -3136,7 +3140,9 @@
 		}
 		.adress #cadastrar{
 			border: 0px solid black !important;
-			margin-top: 23%;
+			padding-top: 0%;
+			margin-top: 15%;
+			margin-bottom: 15%;
 		}
 		select{
 			color: white !important;
@@ -3147,7 +3153,6 @@
 			height: 10vmax;
 			color: white;
 			text-align: end;
-			margin-right: 20vmin;
 			justify-content: center;
 			vertical-align: middle;
 			line-height: 6vmin;
@@ -3155,7 +3160,7 @@
 			margin-bottom: 0px;
 		}
 		.title{
-			margin-top: 5vmin;
+			margin-top: 5%;
 			font-size: 7vmin;
 			font-family: 'Source Sans Pro', sans-serif;
 			font-weight: bold;
@@ -3179,12 +3184,22 @@
 			flex-direction: row;
 			justify-content: space-between;
 		}
-		.form-content{
+		.form-content
+		{
+			text-align: center;
 			width: 500vmin;
 		}
+		legend{
+			font-size: 200%;
+			color: grey;
+		}
 		.form{
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
 			width: 95%;
-			height: 80vmin;
+			height: 100%;
 		}
 		.inner .form{
 			border-radius: 30px;
@@ -3200,6 +3215,7 @@
 					height: 95vmin;
 				}
 				.title{
+					
 					font-size: 5vmin;
 					line-height: 4vmin;
 				}
@@ -3213,30 +3229,11 @@
 					width: 100%;
 					height: 20%;
 				}
-				legend{
-					margin-right: 30vmin;
-				}
-		}
-		@media screen and (max-width: 1276px){
-				legend{
-					margin-right: 23vmin;
-				}
-		}
-		@media screen and (max-width: 1126px){
-				legend{
-					margin-right: 20vmin;
-				}
-		}
-
-		@media screen and (max-width: 1050px) {
-				legend{
-					margin-right: 18vmin;
-				}
 		}
 		@media screen and (max-width: 1000px) {
 				.form{
 					text-align: center;
-					height: 170vmax;
+					height: 100%;
 				}
 				.form #row{
 					justify-content: center;
@@ -3264,7 +3261,7 @@
 				}
 				#banner h1{
 					padding-top: 0px !important;
-					margin-top: 0px !important;
+					margin-top: 12% !important;
 					padding-bottom: 170vmin;
 					text-align: center !important;
 					font-size: 7vmin !important;
@@ -3280,7 +3277,6 @@
 				}
 				legend{
 					font-size: 5vmin;
-					margin-right: 5%;
 				}
 				
 			
@@ -3290,32 +3286,6 @@
 				
 		
 		}
-		@media screen and (max-width: 1150px){
-				legend{
-					margin-right: 17vmin;
-				}
-		}	
-		
-		@media screen and (max-width: 1120px){
-				legend{
-					margin-right: 17vmin;
-				}
-		}
-		@media screen and (max-width: 1000px){
-				legend{
-					margin-right: 7vmin;
-				}
-		}
-		@media screen and (max-width: 940px){
-				legend{
-					margin-right: 6vmin;
-				}
-		}	
-		@media screen and (max-width: 900px){
-				legend{
-					margin-right: 3.5vmin;
-				}
-		}	
 		@media screen and (max-width: 850px) {
 
 				.form-content{
@@ -3326,22 +3296,19 @@
 				}
 				.form{
 					text-align: center;
-					height: 170vmax;
+					height: 100%;
 				}
 				label{
 					font-size: 20px;
 				}
-				legend{
-					font-size: 5vmin;
-					margin-right: 2vmin;
-				}
+			
 				.form-divisor{
 					justify-content: center;
 					flex-direction: column;
 				}
 				#banner h1{
 					padding-top: 0px !important;
-					margin-top: 0px !important;
+					margin-top: 20% !important;
 					padding-bottom: 170vmin;
 					text-align: center !important;
 					font-size: 7vmin !important;
@@ -3354,7 +3321,7 @@
 		}
 			@media screen and (max-width: 700px) {
 				.form{
-					height: 120vmax;
+					height: 100%;
 				}
 				#banner{
 
@@ -3370,9 +3337,6 @@
 				.title{
 					height: 10vmin;
 					margin-bottom: 0px;
-				}
-				legend{
-					margin-right: 18vmin;
 				}
 		}
 
