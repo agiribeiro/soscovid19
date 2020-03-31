@@ -3160,7 +3160,7 @@
 			margin-bottom: 0px;
 		}
 		.title{
-			margin-top: 5%;
+			margin-top: 5vmin;
 			font-size: 7vmin;
 			font-family: 'Source Sans Pro', sans-serif;
 			font-weight: bold;
@@ -3220,7 +3220,7 @@
 					line-height: 4vmin;
 				}
 				.adress #cadastrar{
-					margin-top: 20vmin;
+					margin-top: 10vmin;
 					padding: 1vmin;
 					padding-top: 0vmin;
 					font-size: 3vmin;
@@ -3229,6 +3229,14 @@
 					width: 100%;
 					height: 20%;
 				}
+		}
+		@media screen and (max-width: 1080px){
+			
+				.adress #cadastrar{
+					margin-top: 13vmin;
+				
+				}
+			
 		}
 		@media screen and (max-width: 1000px) {
 				.form{
@@ -3328,6 +3336,11 @@
 
 					justify-content: center;
 				}
+				.adress #cadastrar{
+					margin-top: 0vmin;
+					font-size: 5vmin;
+				}
+
 				#banner h1{
 					display: none;
 				}
